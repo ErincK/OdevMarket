@@ -1,0 +1,16 @@
+server:
+  port: 8090
+  # DİKKAT!!!
+  # İlk yasladığınız Ana parametre sola bitişik olmalı.
+  # Ana başlık ile alt başlığı ayırmak için bir TAB boşluk kullanın ve çok dikkatli olun.
+  # Ayrıca gireceğiniz değer :(iki nokta)'dan sonra boşluk bırakılarak yazılır.
+  # YOKSA HATAYA SEBEP OLUR FARKEDEMEZSİNİZ !!!!
+spring:
+  datasource:
+    driver-clas-name: org.postgresql.Driver
+    username: postgres
+    password: root
+    url: jdbc:postgresql://localhost:5432/OdevMarket
+  jpa:
+    hibernate:
+      ddl-auto: update
